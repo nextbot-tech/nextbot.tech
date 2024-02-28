@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/img/logo-purple.png" sizes="32x32"/>
+    <link rel="icon" href="assets/img/logo-purple.png" sizes="192x192"/>
+
+    <title>Store</title>
+
+    <link href="assets/css/plugins.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="dsn-ajax">
+    <div id="dsn_preloader" class="preloader">
+
+        <div class="dsnload p-absolute">
+            <span class="dsnload__row">
+                <span class="dsnload__img">
+                <img src="assets/img/logo-purple.png" class="logo-dark" alt="nextbot" decoding="async" loading="lazy"/>
+                <img src="assets/img/logo-purple.png" class="logo-light" alt="nextbot" decoding="async" loading="lazy"/>
+                </span>
+            </span>
+            <span class="dsnload__row dsnload__row--sibling">
+                <span class="dsnload__img">
+                     <img src="assets/img/logo-purple.png" class="logo-dark" alt="nextbot" decoding="async" loading="lazy"/>
+                <img src="assets/img/logo-purple.png" class="logo-light" alt="nextbot" decoding="async" loading="lazy"/>
+                </span>
+            </span>
+            <span class="dsnload__row dsnload__row--sibling">
+                <span class="dsnload__img">
+                    <img src="assets/img/logo-purple.png" class="logo-dark" alt="nextbot" decoding="async" loading="lazy"/>
+                <img src="assets/img/logo-purple.png" class="logo-light" alt="nextbot" decoding="async" loading="lazy"/>
+                </span>
+            </span>
+            <span class="dsnload__row dsnload__row--sibling">
+                <span class="dsnload__img">
+                   <img src="assets/img/logo-purple.png" class="logo-dark" alt="nextbot" decoding="async" loading="lazy"/>
+                <img src="assets/img/logo-purple.png" class="logo-light" alt="nextbot" decoding="async" loading="lazy"/>
+                </span>
+            </span>
+    
+    
+        </div>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" class="v-middle" preserveAspectRatio="xMinYMin meet"
+             fill="none">
+            <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="var(--theme-color)"></stop>
+                <stop offset="50%" stop-color="var(--border-color)"></stop>
+                <stop offset="100%" stop-color="var(--assistant-color)"></stop>
+            </linearGradient>
+            <path class="dsn-progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+        <div class="loading-circle v-middle">
+            <p class="loading-count v-middle">0</p>
+        </div>
+    
+        <span class="loading-text text-uppercase mt-30 dsn-container">Loading ...</span>
+        <div class="bg-load background-section d-flex align-items-end">
+            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10"
+                 preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
+                      vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+        </div>
+    
+    </div>
+    <main id="main_root" class="main-root">
+         <!-- ========== Menu ========== -->
+    <header id="site_menu_header" class="site-header  dsn-container d-none dsn-hamburger home-parallax">
+        <div class="main-logo">
+            <a href="index.html" data-dsn-text="Nextbot" class="custom-logo-link main-brand effect-ajax" rel="home"
+               aria-current="page">
+                <img src="assets/img/logo-purple.png" class="custom-logo logo-light" alt="nextbot"/>
+                <img src="assets/img/logo-purple.png" class="custom-logo logo-dark" alt="nextbot"/>
+            </a>
+        </div>
+        <nav class="main-navigation ">
+            <div class="menu-cover-title header-container dsn-container">MENU</div>
+            <ul id="dsn-primary-list" class="primary-nav h2">
+                <li class="nav-item has-sub-menu">
+                    <a title="Home" href="/index.html">
+                        <span class="overflow ">Home</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item has-sub-menu">
+                    <a title="Home" href="#0">
+                        <span class="overflow ">Portfolio</span>
+                    </a>
+                    <ul class="nav-item">
+                        <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Portfolio</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                        </li>
+                        <li class="nav-item has-sub-menu">
+                            <a title="Carousel" href="#0" data-dsn-text="Business">
+                                <span class="overflow">Carousel</span>
+                            </a>
+                            <ul class="nav-item">
+                                <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Carousel</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="Carousel Portfolio 1" href="carousel-portfolio-1.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Carousel Portfolio 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="Carousel Portfolio" href="carousel-portfolio-2.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Carousel Portfolio 2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="Carousel Portfolio 3" href="carousel-portfolio-3.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Carousel Portfolio 3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-sub-menu">
+                            <a title="Carousel" href="#0" data-dsn-text="Business">
+                                <span class="overflow">Sliders</span>
+                            </a>
+                            <ul class="nav-item">
+                                <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Sliders</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                </li>
+                                <li class="nav-item has-sub-menu">
+                                    <a title="Slider" href="#0" data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Fullscreen</span>
+                                    </a>
+                                    <ul class="nav-item">
+                                        <li class="dsn-back">
+                                            <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Fullscreen</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a title="Slider" href="fullscreen-distortion-horizontal.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Distortion / H</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="fullscreen-distortion-vertical.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Distortion / V</span>
+                                            </a>
+
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="fullscreen-parallax-horizontal.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Parallax / H</span>
+                                            </a>
+
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="fullscreen-parallax-vertical.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Parallax / V</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item has-sub-menu">
+                                    <a title="Slider" href="#0" data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Padding</span>
+                                    </a>
+                                    <ul class="nav-item">
+                                        <li class="dsn-back">
+                                            <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Padding</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a title="Slider" href="padding-distortion-horizontal.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Distortion / H</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="padding-distortion-vertical.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Distortion / V</span>
+                                            </a>
+
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="padding-parallax-horizontal.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Parallax / H</span>
+                                            </a>
+
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="padding-parallax-vertical.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Parallax / V</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item has-sub-menu">
+                                    <a title="Slider" href="#0" data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Halfscreen</span>
+                                    </a>
+                                    <ul class="nav-item">
+                                        <li class="dsn-back">
+                                            <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Halfscreen</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a title="Slider" href="half-distortion-horizontal.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Distortion / H</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="half-distortion-vertical.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Distortion / V</span>
+                                            </a>
+
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="half-parallax-horizontal.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Parallax / H</span>
+                                            </a>
+
+                                        </li>
+                                        <li class="nav-item">
+
+                                            <a title="Slider" href="half-parallax-vertical.html"
+                                               data-dsn-text="Our Portfolio">
+                                                <span class="overflow">Slider Parallax / V</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </li>
+
+                        <li class="nav-item has-sub-menu">
+                            <a title="Card" href="#0" data-dsn-text="Portfolio">
+                                <span class="overflow">Card</span>
+                            </a>
+                            <ul class="nav-item">
+                                <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Card</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work card 1" href="work-card-1.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work Card 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work card 2" href="work-card-2.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work Card 2</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-sub-menu">
+                            <a title="Card" href="#0" data-dsn-text="Portfolio">
+                                <span class="overflow">Classic</span>
+                            </a>
+                            <ul class="nav-item">
+                                <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Classic</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work classic 1" href="work-classic-1.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work classic 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work classic 2" href="work-classic-2.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work classic 2</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-sub-menu">
+                            <a title="List" href="#0" data-dsn-text="Portfolio">
+                                <span class="overflow">List</span>
+                            </a>
+                            <ul class="nav-item">
+                                <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">List</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work list 1" href="work-list-1.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work List 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work list 2" href="work-list-2.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work List 2</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-sub-menu">
+                            <a title="Metro" href="#0" data-dsn-text="Portfolio">
+                                <span class="overflow">Metro</span>
+                            </a>
+                            <ul class="nav-item">
+                                <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Metro</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work Metro 1" href="metro-portfolio-1.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work Metro 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a title="work Metro 2" href="metro-portfolio-2.html"
+                                       data-dsn-text="Our Portfolio">
+                                        <span class="overflow">Work Metro 2</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li> -->
+                <!-- <li class="nav-item has-sub-menu">
+                    <a title="Home" href="#0">
+                        <span class="overflow ">Works</span>
+                    </a>
+                    <ul class="nav-item">
+                        <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Works</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="VISIONAID" href="project-1.html" data-dsn-text="VISIONAID">
+                                <span class="overflow">VISIONAID</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="MEN FASHION" href="project-2.html" data-dsn-text="MEN FASHION">
+                                <span class="overflow">MEN FASHION</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="AUDI RS" href="project-3.html" data-dsn-text="AUDI RS">
+                                <span class="overflow">AUDI RS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="OPEN RUN" href="project-4.html" data-dsn-text="OPEN RUN">
+                                <span class="overflow">OPEN RUN</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="DOG CHOW" href="project-5.html" data-dsn-text="DOG CHOW">
+                                <span class="overflow">DOG CHOW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="HEADPHONES" href="project-6.html" data-dsn-text="HEADPHONES">
+                                <span class="overflow">HEADPHONES</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li> -->
+                <!-- <li class="nav-item has-sub-menu">
+                    <a title="Home" href="#0">
+                        <span class="overflow ">Blog</span>
+                    </a>
+                    <ul class="nav-item">
+                        <li class="dsn-back">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+                                         viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                    d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="text-toggle-back">
+                                        <span class="text-name">Blog</span>
+                                        <span class="text-back">Back</span>
+                                    </span>
+                                </span>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="Stories" href="stories.html" data-dsn-text="Stories">
+                                <span class="overflow">Stories</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="Single Post" href="single-post.html" data-dsn-text="Single Post">
+                                <span class="overflow">Single Post</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </li> -->
+                <!-- <li class="nav-item ">
+                    <a title="Service" href="service.html">
+                        <span class="overflow">Service</span>
+                    </a>
+                </li> -->
+                <li class="nav-item ">
+                    <a title="Home" href="store.html">
+                        <span class="overflow">Store</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a title="Home" href="about.html">
+                        <span class="overflow">About</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a title="Home" href="contact.html">
+                        <span class="overflow">Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="container-content  d-flex flex-column justify-content-center section-margin">
+                <div class="nav__info">
+                    <div class="nav-content">
+                        <h5 class="sm-title-block mb-10">Company address:</h5>
+                        Nextbot Communications Private Limited  <br/>
+
+                        14, 1st Floor<br/>
+                        Link Road, Jangpura Extension<br/>
+                        New Delhi 110014
+
+                    </div>
+                    <div class="nav-content mt-30">
+                        <h5 class="sm-title-block mb-10">Contact</h5>
+                        <!-- <p class="links over-hidden mb-1">
+                            <a class="link-hover d-block" href="tel:00201004392260" data-hover-text="+00 (2)012 3321">
+                                sales@nextbot.in</a>
+                            <a class="link-hover" href="tel:00201024552406" data-hover-text="+00 (2)012 3321">+00
+                                (2)01024552406</a>
+                        </p> -->
+                        <p class="links over-hidden"><a class="link-hover" href="mailto:sales@nextbot.in"
+                                                        data-hover-text="sales@nextbot.in">sales@nextbot.in</a></p>
+
+                    </div>
+                </div>
+                <!-- <div class="nav-social nav-content mt-30">
+                    <div class="nav-social-inner p-relative">
+                        <h5 class="sm-title-block mb-10">Follow us</h5>
+                        <ul style="--dsn-li-name: dsn6;">
+                            <li style="--dsn-li-index: 0;"><a href="#0" target="_blank"
+                                                              rel="nofollow noopener noreferrer">Dribbble.</a></li>
+                            <li style="--dsn-li-index: 1;"><a href="#0" target="_blank"
+                                                              rel="nofollow noopener noreferrer">Behance.</a></li>
+                            <li style="--dsn-li-index: 2;"><a href="#0" target="_blank"
+                                                              rel="nofollow noopener noreferrer">Linkedin.</a></li>
+                            <li style="--dsn-li-index: 3;"><a href="#0" target="_blank"
+                                                              rel="nofollow noopener noreferrer">Twitter.</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+            <div class="toggle-icon">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+            <div class="toggle-text">
+                <div class="text-menu">Menu</div>
+                <div class="text-open">Open</div>
+                <div class="text-close">Close</div>
+            </div>
+        </div>
+        <div class="bg-load background-main"></div>
+
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
+             class="bg-load dsn-svg-transition">
+            <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+
+    </header>
+    <!-- ========== End Menu ========== -->
+
+    <div id="page_wrapper" class="wrapper">
+        <section class="section block-banner-shop"> 
+            <div class="container"> 
+              <h1 class="text-56-medium">Shop</h1>
+              <div class="breadcrumbs"> 
+                <ul> 
+                  <li> <a href="#">Home </a></li>
+                  <li> <a href="#">Shop</a></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        <section class="section block-content-shop">
+            <div class="container">
+              <div class="shop-top-filter">
+                <div class="left-filter"><a class="btn-open-filter" href="#">Filter</a></div>
+                <div class="right-filter">
+                  <div class="box-filter-top"> 
+                    <div class="show-sm"> <a class="btn-open-filter" href="#">Filter </a></div>
+                    <div class="number-product"> 
+                      <p class="body-p2 neutral-medium-dark">Showing 9 of 18 products</p>
+                    </div>
+                    <div class="box-sort"> 
+                      <div class="box-sortby d-flex align-items-center">
+                        <div class="dropdown dropdown-sort">
+                          <button class="btn dropdown-toggle" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false">Default Sorting</button>
+                          <!-- <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
+                            <li><a class="dropdown-item active" href="#">Default Sorting</a></li>
+                            <li><a class="dropdown-item" href="#">Oldest products</a></li>
+                            <li><a class="dropdown-item" href="#">Comments products </a></li>
+                          </ul> -->
+                        </div>
+                      </div>
+                      <div class="box-view-style"> <a class="view-type view-2" href="#" data-col="2"></a><a class="view-type view-3 active" href="#" data-col="3"></a><a class="view-type view-4" href="#" data-col="4"></a><a class="view-type view-5" href="#" data-col="5"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-sm">
+              <div class="wrapper-overlay"></div>
+              <div class="box-filters-sidebar"> 
+                <h5 class="title-filter">Filter</h5>
+                <div class="block-filter"> 
+                  <h6 class="item-collapse">Categories</h6>
+                  <div class="box-collapse scrollFilter">
+                    <ul class="list-filter-checkbox"> 
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Womens <span class="neutral-medium">(12)</span></span><span class="checkmark"></span>
+                        </label><span class="arrow-down"></span>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Mens <span class="neutral-medium">(9)</span></span><span class="checkmark"></span>
+                        </label><span class="arrow-down"></span>
+                        <ul> 
+                          <li> 
+                            <label class="cb-container">
+                              <input type="checkbox"><span class="text-small">Hats<span class="neutral-medium">(4)</span></span><span class="checkmark"></span>
+                            </label>
+                          </li>
+                          <li> 
+                            <label class="cb-container">
+                              <input type="checkbox"><span class="text-small">Glasses <span class="neutral-medium">(3)</span></span><span class="checkmark"></span>
+                            </label>
+                          </li>
+                          <li> 
+                            <label class="cb-container">
+                              <input type="checkbox"><span class="text-small">Jeans<span class="neutral-medium">(2)</span></span><span class="checkmark"></span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Kids <span class="neutral-medium">(15)</span></span><span class="checkmark"></span>
+                        </label><span class="arrow-down"></span>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Gifts <span class="neutral-medium">(10)</span></span><span class="checkmark"></span>
+                        </label><span class="arrow-down"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="block-filter"> 
+                  <h6 class="item-collapse">Colors </h6>
+                  <div class="box-collapse scrollFilter">
+                    <ul class="list-colors"> 
+                      <li class="active"> 
+                        <div class="box-colors">
+                          <div class="item-color color-4"></div>
+                          <label>Blue</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box-colors">
+                          <div class="item-color color-3"></div>
+                          <label>Grey</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box-colors">
+                          <div class="item-color color-5"></div>
+                          <label>Red</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box-colors">
+                          <div class="item-color color-6"></div>
+                          <label>Yellow</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="block-filter"> 
+                  <h6 class="item-collapse">Size </h6>
+                  <div class="box-collapse scrollFilter">
+                    <div class="block-size">
+                      <div class="list-sizes"><span class="item-size">XS </span><span class="item-size active">S </span><span class="item-size">M </span><span class="item-size">XL </span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-filter"> 
+                  <h6 class="item-collapse">Brand </h6>
+                  <div class="box-collapse scrollFilter">
+                    <ul class="list-filter-checkbox"> 
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Adidas</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Chloe</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Kendo</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Nike</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Adidas</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="block-filter"> 
+                  <h6 class="item-collapse">Price </h6>
+                  <div class="box-collapse scrollFilter">
+                    <ul class="list-filter-checkbox"> 
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$10.00 - $49.00</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$50.00 - $99.00</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$100.00 - $199.00</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">$200.00 +</span><span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-filter-middle">
+              <div class="container">
+                <div class="box-filters"> 
+                  <div class="block-filter block-filter-big"> 
+                    <h6 class="head-filter">Categories</h6>
+                    <div class="box-collapse scrollFilter">
+                      <ul class="list-filter-checkbox"> 
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Womens <span class="neutral-medium">(12)</span></span><span class="checkmark"></span>
+                          </label><span class="arrow-down"></span>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Mens <span class="neutral-medium">(9)</span></span><span class="checkmark"></span>
+                          </label><span class="arrow-down"></span>
+                          <ul> 
+                            <li> 
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Hats<span class="neutral-medium">(4)</span></span><span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li> 
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Glasses <span class="neutral-medium">(3)</span></span><span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li> 
+                              <label class="cb-container">
+                                <input type="checkbox"><span class="text-small">Jeans<span class="neutral-medium">(2)</span></span><span class="checkmark"></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Kids <span class="neutral-medium">(15)</span></span><span class="checkmark"></span>
+                          </label><span class="arrow-down"></span>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Gifts <span class="neutral-medium">(10)</span></span><span class="checkmark"></span>
+                          </label><span class="arrow-down"></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="block-filter"> 
+                    <h6 class="head-filter">Colors </h6>
+                    <div class="box-collapse scrollFilter">
+                      <ul class="list-colors"> 
+                        <li class="active"> 
+                          <div class="box-colors">
+                            <div class="item-color color-4"></div>
+                            <label>Blue</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="box-colors">
+                            <div class="item-color color-3"></div>
+                            <label>Grey</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="box-colors">
+                            <div class="item-color color-5"></div>
+                            <label>Red</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="box-colors">
+                            <div class="item-color color-6"></div>
+                            <label>Yellow</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="block-filter"> 
+                    <h6 class="head-filter">Size </h6>
+                    <div class="box-collapse scrollFilter">
+                      <ul class="list-filter-checkbox"> 
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">S <span class="neutral-medium">(3)</span></span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">L <span class="neutral-medium">(9)</span></span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">M <span class="neutral-medium">(4)</span></span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">XL <span class="neutral-medium">(5)</span></span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="block-filter"> 
+                    <h6 class="head-filter">Brand </h6>
+                    <div class="box-collapse scrollFilter">
+                      <ul class="list-filter-checkbox"> 
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Adidas</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Chloe</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Kendo</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Nike</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">Adidas</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="block-filter block-filter-big"> 
+                    <h6 class="head-filter">Price </h6>
+                    <div class="box-collapse scrollFilter">
+                      <ul class="list-filter-checkbox"> 
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">$10.00 - $49.00</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">$50.00 - $99.00</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">$100.00 - $199.00</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li> 
+                          <label class="cb-container">
+                            <input type="checkbox"><span class="text-small">$200.00 +</span><span class="checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <!-- <div class="box-your-filter box-your-filter-shop2">
+                <div class="block-text-filter"><span class="body-p2 neutral-medium-dark">Your filter</span></div>
+                <div class="block-ele-filter"><a class="btn btn-tag-filter" href="#">XS<span class="close-tag"></span></a><a class="btn btn-tag-filter" href="#">Women<span class="close-tag"></span></a><a class="clear-filter link-underline" href="#">Clear All</a></div>
+              </div> -->
+              <div class="box-list-products">
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="product-one.html"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/l1jmc280/headphone/u/s/a/buddy-a30-true-wireless-green-nextbot-original-imagd2wwaunpgw7w.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/kzd147k0/headphone/x/g/m/buddy-a30-true-wireless-green-nextbot-original-imagbe39nqgfubdh.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="product-one.html">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="product-one.html">
+                        <h6 class="text-16-medium cardTitle">Nextbot Buddy A30 True Wireless Green Bluetooth Headset  (Green, True Wireless)</h6></a>
+                      <p class="body-p2 cardDesc">₹566</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/kkimfm80/water-geyser/p/y/j/2020-l28-3000-nextbot-10-original-imafzud6eakrjg7v.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/xif0q/water-geyser/n/y/s/2020-l28i-3000-nextbot-99-original-imagyfv65shykgbp.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Nextbot 10 L Instant Water Geyser (L28 Wall mount, Best for Kitchen, washroom & Basin, White)</h6></a>
+                      <p class="body-p2 cardDesc">₹1,996</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/xif0q/water-geyser/a/o/m/2020-l28i-3000-nextbot-99-original-imaghds37rkjxwvs.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/xif0q/water-geyser/7/6/g/2020-l28i-3000-nextbot-99-original-imaghds3yvyy2t3z.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Nextbot 99 L Instant Water Geyser (L28i Wall mount, Best for Kitchen, washroom & Basin, White)</h6></a>
+                      <p class="body-p2 cardDesc">₹1,999</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/xif0q/food-maker/j/p/h/yogurt-curd-maker-with-stainless-steel-bowl-900ml-y28s-yogurt-original-imaghtfzqzycf82h.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/xif0q/food-maker/j/p/h/yogurt-curd-maker-with-stainless-steel-bowl-900ml-y28s-yogurt-original-imaghtfzqzycf82h.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Nextbot Yogurt / Curd maker with stainless steel bowl (900ml) Yogurt Maker  (Orange)</h6></a>
+                      <p class="body-p2 cardDesc">₹499</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/xif0q/tire-air-pump/6/i/o/300-car-air-pump-with-builtin-fan-correct-meter-gauge-bronze-original-imagg4pb2ymynjnf.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/xif0q/tire-air-pump/8/w/9/300-car-air-pump-with-builtin-fan-correct-meter-gauge-bronze-original-imagg4pbrznnbd4k.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Nextbot 300 psi Tyre Air Pump for Car & Bike</h6></a>
+                      <p class="body-p2 cardDesc">₹799</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/l20rma80/fan/g/3/n/rechargeable-folding-fan-with-adjustable-height-battery-backup-original-imagdgh5zkk2ezhz.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/l20rma80/fan/1/p/k/rechargeable-folding-fan-with-adjustable-height-battery-backup-original-imagdgh5wf6gwey4.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="#">Not Available</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Nextbot Rechargeable Folding Fan with Adjustable height, battery backup upto 3.5 hours 4 Blade Pedestal Fan  (White, Pack of 1)</h6></a>
+                      <p class="body-p2 cardDesc">Not Available</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://rukminim2.flixcart.com/image/832/832/kt7jv680/food-maker/u/w/m/multipurpose-cooking-pot-steel-steamer-a28l-food-steamer-nextbot-original-imag6ha9rxwkybpu.jpeg?q=70&crop=false" alt="guza"><img class="imageHover" src="https://rukminim2.flixcart.com/image/832/832/kt7jv680/food-maker/g/e/s/multipurpose-cooking-pot-steel-steamer-a28l-food-steamer-nextbot-original-imag6ha9gdqghsfb.jpeg?q=70&crop=false" alt="guza"></a>
+                      <div class="button-select"><a href="#">Not Available</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Nextbot Multipurpose Cooking Pot + Steel Steamer Food Steamer  (Multicolor)</h6></a>
+                      <p class="body-p2 cardDesc">Not Available</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Perfect-Curd-Maker-1.jpg" alt="guza"><img class="imageHover" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Perfect-Curd-Maker-2.jpg" alt="guza"></a>
+                      <div class="button-select"><a href="#">Not Available</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Perfect Curd Maker</h6></a>
+                      <p class="body-p2 cardDesc">Not Available</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Flameless-Electric-Cooking-Stove-500-w--1-kitchenQueen.jpg" alt="guza"><img class="imageHover" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Flameless-Electric-Cooking-Stove-500-w--2-kitchenQueen.jpg" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Kitchen Queen Flameless Electric Cooking Stove</h6></a>
+                      <p class="body-p2 cardDesc">₹ 999</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Portable-Electric-Grinder-EG1-1.jpg" alt="guza"><img class="imageHover" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Portable-Electric-Grinder-EG1-2.jpg" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Portable Electric Grinder</h6></a>
+                      <p class="body-p2 cardDesc">₹ 699</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="cardProduct wow fadeInUp">
+                    <div class="cardImage"><a href="#"><img class="imageMain" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Flameless-Electric-Stainless-Steel-Cooking-Stove-ECS1-Steel-1.jpg" alt="guza"><img class="imageHover" src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Flameless-Electric-Stainless-Steel-Cooking-Stove-ECS1-Steel-2.jpg" alt="guza"></a>
+                      <div class="button-select"><a href="#">Buy Now</a></div>
+                      <div class="box-quick-button"><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_116_452)">
+                              <path d="M14.001 6.52898C16.35 4.41998 19.98 4.48998 22.243 6.75698C24.505 9.02498 24.583 12.637 22.479 14.993L13.999 23.485L5.52101 14.993C3.41701 12.637 3.49601 9.01898 5.75701 6.75698C8.02201 4.49298 11.645 4.41698 14.001 6.52898ZM20.827 8.16998C19.327 6.66798 16.907 6.60698 15.337 8.01698L14.002 9.21498L12.666 8.01798C11.091 6.60598 8.67601 6.66798 7.17201 8.17198C5.68201 9.66198 5.60701 12.047 6.98001 13.623L14 20.654L21.02 13.624C22.394 12.047 22.319 9.66498 20.827 8.16998Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_116_452">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_200_1102)">
+                              <path d="M15.375 12.0416L19.5 16.1666L15.375 20.2916L14.1967 19.1133L16.31 16.9991L5.33333 17V15.3333H16.31L14.1967 13.22L15.375 12.0416ZM8.625 3.70831L9.80333 4.88665L7.69 6.99998H18.6667V8.66665H7.69L9.80333 10.78L8.625 11.9583L4.5 7.83331L8.625 3.70831Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_200_1102">
+                                <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a><a class="btn preview-product" href="#">
+                          <svg class="d-inline-flex align-items-center justify-content-center" width="28" height="28" viewbox="0 0 28 28" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_91_73)">
+                              <path d="M20.031 18.617L24.314 22.899L22.899 24.314L18.617 20.031C17.0237 21.3082 15.042 22.0029 13 22C8.032 22 4 17.968 4 13C4 8.032 8.032 4 13 4C17.968 4 22 8.032 22 13C22.0029 15.042 21.3082 17.0237 20.031 18.617ZM18.025 17.875C19.2941 16.5699 20.0029 14.8204 20 13C20 9.132 16.867 6 13 6C9.132 6 6 9.132 6 13C6 16.867 9.132 20 13 20C14.8204 20.0029 16.5699 19.2941 17.875 18.025L18.025 17.875Z" fill=""></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_91_73">
+                                <rect width="24" height="24" fill="white" transform="translate(2 2)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                    </div>
+                    <div class="cardInfo"><a href="#">
+                        <h6 class="text-16-medium cardTitle">Flameless Electric Stainless Steel Cooking Stove (ECS1) Steel</h6></a>
+                      <p class="body-p2 cardDesc">₹ 999</p>
+                      <div class="box-colors">
+                        <div class="item-color color-1"></div>
+                        <div class="item-color color-2"></div>
+                        <div class="item-color color-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="text-center mt-50">
+                <nav class="box-pagination">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link page-prev" href="#">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"></path>
+                        </svg></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                    <li class="page-item"><a class="page-link page-next" href="#">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg></a></li>
+                  </ul>
+                </nav>
+              </div> -->
+            </div>
+          </section>
+          <!-- ========== Footer ========== -->
+        <footer id="dsn_footer" class="dsn-footer p-relative footer-animate svg-animate background-main">
+            <svg class="dsn-separator dsn-separator-up  dsn-icon-assistant-color" width="100%" height="100%"
+                 viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
+                      vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+            <div class="footer-content p-relative mt-section">
+
+                <!-- <div class="text-center container">
+                    <h2 class="title-h2 ">
+                        LET'S BUILD SOMETHING
+                        <span class="d-block"><b><i>AMAZING </i></b>TOGETHER</span>
+                    </h2>
+                    <div class="dsn-icon-heading-color dsn-def-btn d-flex justify-content-center mt-30">
+                        <a class="dsn-btn dsn-border border-color-default  background-section  effect-ajax has-icon-left"
+                           href="contact.html" data-dsn-text="START A PROJECT">
+                    <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
+                        <i class="fas fa-angle-right" aria-hidden="true"></i>
+                    </span>
+                            <span class="title-btn p-relative  z-index-1 ">START A PROJECT</span>
+                        </a>
+                    </div>
+
+                </div> -->
+                <div class="dsn-container pt-60">
+                    <div class="d-grid grid-lg-4 grid-md-2 ">
+                        <div class="grid-col-1">
+                            <div class="dsn-logo main-logo">
+                                <div class="main-logo">
+                                    <a href="index.html" data-dsn-text="nextbot"
+                                       class="custom-logo-link main-brand effect-ajax" rel="home">
+                                        <img class="custom-logo logo-light" src="assets/img/logo-purple.png"
+                                             alt="nextbot"/>
+                                        <img class="custom-logo logo-dark" src="assets/img/logo-purple.png"
+                                             alt="nextbot"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="dsn-socials box-social mt-20 dsn-icon-heading-color">
+                                <li><a href="#0" target="_blank" rel="nofollow"
+                                       class="init-color move-circle border-color-default" data-dsn="parallax"><span
+                                        class="dsn-icon"><i class="fab fa-facebook-f"></i></span><span>FB</span></a>
+                                </li>
+                                <li><a href="#0" target="_blank" rel="nofollow"
+                                       class="init-color move-circle border-color-default" data-dsn="parallax"><span
+                                        class="dsn-icon"><i class="fab fa-twitter"></i></span><span>TW</span></a>
+                                </li>
+                                <li><a href="#0" target="_blank" rel="nofollow"
+                                       class="init-color move-circle border-color-default" data-dsn="parallax"><span
+                                        class="dsn-icon"><i
+                                        class="fab fa-linkedin-in"></i></span><span>LN</span></a></li>
+                                <li><a href="#0" target="_blank" rel="nofollow"
+                                       class="init-color move-circle border-color-default" data-dsn="parallax"><span
+                                        class="dsn-icon"><i class="fab fa-instagram"></i></span><span>IN</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-col-2">
+                            <h4 class="subtitle p-relative line-shape  line-shape-after "><span
+                                    class="background-revere ">NAVIGATION</span>
+                            </h4>
+                            <div class="menu-footer-menu-container">
+                                <ul id="menu-footer-menu" class="menu">
+                                    <li class="menu-item">
+                                        <a href="index.html" class="effect-ajax">HOME</a>
+                                    </li>
+                                    <!-- <li class="menu-item">
+                                        <a href="work-classic-2.html" class="effect-ajax">PORTFOLIO</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="stories.html" class="effect-ajax">NEWS</a>
+                                    </li> -->
+                                    <li class="menu-item">
+                                        <a href="about.html" class="effect-ajax">ABOUT</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="contact.html" class="effect-ajax">CONTACT</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid-col-3">
+                            <h4 class="subtitle p-relative line-shape  line-shape-after "><span
+                                    class="background-revere ">CONTACT</span>
+                            </h4>
+
+                            <div class="col-contact">
+                                <!-- <p><strong>T</strong> : +001 225 3351</p>
+                                <p class="mt-10"><strong>F</strong> :+001 225 3351</p> -->
+                                <p class="over-hidden mt-10">
+                                    <strong>E</strong> : <a class="link-hover" href="#"
+                                                            data-hover-text="sales@nextbot.in">sales@nextbot.in</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="grid-col-4">
+                            <h4 class="subtitle p-relative line-shape  line-shape-after "><span
+                                    class="background-revere ">Company address: </span>
+                            </h4>
+                            <div class="col-address">
+                                <p>
+                                    Nextbot Communications Private Limited <br> 14, 1st Floor<br>Link Road, Jangpura Extension <br> New Delhi 110014 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom mt-60 pt-30 border-top pb-30 text-center">
+                        <p class="over-hidden">
+                            © 2023 Nextbot.
+                            <span>Made with ♥ by </span><a href="#0" class="link-hover" data-hover-text="DSN Grid" target="_blank"> Mattr</a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+        <!-- ========== End Footer ========== -->
+    </div>
+    </main>
+
+     <!-- ========== Cursor ========== -->
+     <div id="dsn_cursor" class="ball"></div>
+     <div id="dsn_cursor_inner" class="ball"></div>
+     <!-- ========== End Cursor ========== -->
+
+    <!-- ========== Line BG ========== -->
+    <div id="line_head"><span class="container"></span></div>
+    <!-- ========== End Line BG ========== -->
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/plugins/dsn-grid.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/vendors/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/waypoints.js"></script>
+    <script src="assets/js/vendors/wow.js"></script>
+    <script src="assets/js/vendors/magnific-popup.js"></script>
+    <script src="assets/js/vendors/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/vendors/select2.min.js"></script>
+    <script src="assets/js/vendors/isotope.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/counterup.js"></script>
+    <script src="assets/js/vendors/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendors/slick.js"></script>
+    <script src="assets/js/vendors/jquery.timepicker.min.js"></script>
+    <script src="assets/js/vendors/glightbox.min.js"></script>
+    <script src="assets/js/main2.js"></script>
+</body>
+</html>
